@@ -1,0 +1,32 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .row-cols-md-3 > .col {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+
+@media (max-width: 992px) {
+  .row-cols-md-3 > .col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .row-cols-md-3 > .col .pentagon-item {
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 672px) {
+  .row-cols-md-3 > .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

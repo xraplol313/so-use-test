@@ -1,0 +1,66 @@
+.pentagon {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pentagon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 55px 30px 0 30px;
+  max-width: 1600px;
+}
+
+.pentagon-item {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  margin: 0.5rem 2rem;
+  clip-path: polygon(50% 0%, 100% 40%, 75% 100%, 25% 100%, 0% 40%);
+  transition: transform 0.5s ease;
+}
+
+.pentagon-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 350px;
+  transform: translate(-50%, -50%);
+  transition: transform 0.5s ease;
+}
+
+.pentagon-item:hover {
+  z-index: 1;
+  transform: scale(1.4);
+}
+
+.pentagon-item:hover img {
+  transform: translate(-50%, -50%) scale(1.43);
+}
+
+.pentagon-button__wrapper {
+  margin-top: 50px;
+}
+
+.pentagon-button {
+  width: 300px;
+  height: 70px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(
+    233deg,
+    rgba(10, 10, 10, 1) 0%,
+    rgba(94, 58, 208, 1) 0%,
+    rgba(255, 94, 113, 1) 100%
+  );
+}
+
+.bootstrap {
+  margin-top: 100px;
+}
